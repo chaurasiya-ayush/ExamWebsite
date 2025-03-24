@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    @media screen and (orientation:landscape) {
+        #article{
+            margin-top: 200px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #cards{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr ;
+            
+        }
+        #cards >div{
+            margin: 20px;
+        }
+        #title{
+            display: flex;
+            padding: 10px;
+            justify-content: space-evenly;
+            background-color: rgb(195, 217, 238);
+        }
+        footer{
+            margin-top: 40px;
+            display: flex;
+            
+            justify-content: space-around;
+        }
+        #box{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        #poster{
+          margin-top: 10px;
+          padding: 20px;
+          display: flex;
+          justify-content: space-around;
+          
+        }
+     
+    }
+    @media screen and (orientation:portrait) {
+      #cards{
+        align-items: center;
+        margin-left: 30px;
+        display: block;
+      }
+      #box{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        #title{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            padding: 10px;
+           
+            background-color: rgb(195, 217, 238);
+        }
+      
+    }
+   
+</style>
+<body>
+
+    <nav class="navbar navbar-expand-lg border ">
+        <div class="container-fluid">
+            <img src="/Screenshot 2025-03-24 144828.png" class="navbar-brand" alt="">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item btn ">
+                <button class="nav-link active btn  text-white" aria-current="page" style="background-color: rgb(96, 96, 232,0.8);">Category</button>
+              </li>
+              <li class="nav-item ms-5 btn">
+                <a class="nav-link text-primary" href="#">Demos</a>
+              </li>
+              <li class="nav-item btn ">
+                <a class="nav-link" href="#">Pages</a>
+              </li>
+              <li class="nav-item btn">
+                <a class="nav-link" href="#">Account</a>
+              </li>
+              <li class="nav-item btn">
+                <a class="nav-link" href="#">Megamenu</a>
+              </li>
+              <li class="nav-item ms-2 me-2 btn">
+                <span  > ...</span>
+              </li>
+              <li>
+                
+              </li>
+              
+            </ul>
+          
+            <input type="text" placeholder="Search" class="form-control ms-3 w-25 navbar-text">
+            <img src="Screenshot 2025-03-24 145951.png" alt="">
+            <span></span>
+          </div>
+        </div>
+      </nav>
+
+      <header >
+        <section id="poster">
+
+            <main  style="color: grey; width: 400px;">
+                <div class="fs-1 fw-bold text-black">
+                    Limitless learning at
+                </div>
+                <div class="fs-1 fw-bold text-black">
+                    your fingers
+                </div>
+                <p >Online learning and teaching marketplace with 5K+ courses & 10M students. Taught by experts to help you acquire new skills.</p>
+                <div>
+                <span>Learn with expert</span>
+                <span>Get Certified</span>
+                <span> Get membership</span>
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-danger">Get Started</button>
+                    <span>Watch Video</span>
+                </div>
+            </main>
+
+            <div >
+                <img src="./mainPoster.png" height="500px" width="400px" alt="">
+            </div>
+        </section>
+        <section>
+            <article id="article">
+
+
+                <div class="card p-4" style="background-color: rgb(218, 198, 163);" style="display: flex; justify-content: space-around;">
+                    <div>
+                        <img src="./comp.png" alt="">
+                    </div>
+                    <div>
+                        <p class="fw-bolder">10K</p>
+                        <p>Online Courses</p>
+
+                    </div>
+                </div>
+                <div class="card p-4" style="background-color: rgb(115, 115, 174); display: flex; justify-content: space-around;">
+                    <div>
+                        <img src="./contact (1).png" alt="">
+                    </div>
+                    <div>
+                        <p class="fw-bolder">200+</p>
+                        <p>Expert Tutors</p>
+
+                    </div>
+                </div>
+                <div class="card p-4" style="background-color: rgb(79, 70, 115); display: flex; justify-content: space-around;">
+                    <div>
+                        <img src="./degree.png" alt="">
+                    </div>
+                    <div>
+                        <p class="fw-bolder">10K</p>
+                        <p>Online Students</p>
+
+                    </div>
+                </div>
+                <div class="card p-4 row" style="background-color: rgb(43, 184, 223); ">
+                    <div>
+                        <img src="./correct.png" alt="">
+                    </div>
+                    <div class="col">
+
+                        <p class="fw-bolder">6K+</p>
+                        <p>Cerfified Courses</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <div id="heading">
+                <div class="fw-bolder fs-1 mt-5 " style="align-items: center; text-align: center;">Most Popular Courses</div>
+                <p style="color: grey; text-align: center;">Choose from hundreds of courses from specialist organizations</p>
+            </div >
+            <div  id="title">
+                <div class="text-primary ">Web Design</div>
+                <div>Development</div>
+                <div>Graphic Design</div>
+                <div>Marketing</div>
+                <div>Finance</div>
+            </div>
+        </section>
+        <section id="cards">
+            <div class="card mt-3" style="width: 18rem;">
+                <img src="./card1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card mt-3" style="width: 18rem;">
+                <img src="./card2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div><div class="card mt-3" style="width: 18rem;">
+                <img src="./card3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div><div class="card mt-3" style="width: 18rem;">
+                <img src="./card4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div><div class="card mt-3" style="width: 18rem;">
+                <img src="./card5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div><div class="card mt-3" style="width: 18rem;">
+                <img src="./card6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div><div class="card mt-3" style="width: 18rem;">
+                <img src="./card7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div><div class="card mt-3" style="width: 18rem;">
+                <img src="./card8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </section>
+        <section id="box" style="background-color: rgb(148, 114, 228);">
+            <div class="w-50">
+                <div class="fw-bolder fs-3">Become an Instructor!</div>
+                <p  style="color: white">
+                 
+Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced. Yet uncommonly his ten who diminution astonished.
+                </p>
+            </div>
+            <div class="mt-4">
+
+                <button class="btn btn-outline-warning"> Start Teaching Today</button>
+            </div>
+        </section>
+        
+      </header>
+      <footer class="p-4">
+        <div id="partone" class="ms-4">
+            <div>
+                <img src="./eduport.png" alt="">
+            </div>
+            <!-- <p class="w-50">Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p> -->
+            <div>
+               <img src="./icons.png" alt="">
+            </div>
+
+        </div>
+        <div id="parttwo">
+            <div class="fw-bolder">Company</div>
+            <ul style="list-style: none;">
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>News And blogs</li>
+                <li>Library</li>
+                <li>career</li>
+
+            </ul>
+        </div>
+        <div id="partthree">
+            <div class="fw-bolder">Community</div>
+            <ul style="list-style: none;">
+                <li>Documentation</li>
+                <li>Contact us</li>
+                <li>News And blogs</li>
+                <li>Library</li>
+                <li>career</li>
+
+            </ul>
+        </div>
+        <div id="partfour">
+            <div class="fw-bolder">Teaching</div>
+            <ul style="list-style: none;">
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>News And blogs</li>
+                <li>Library</li>
+                <li>career</li>
+
+            </ul>
+        </div>
+        <div id="part5">
+            <div class="fw-bolder">Contact </div>
+            <p>Toll free +123 434 564</p>
+            <p>Email : excsf@gmail.com</p>
+            <div>
+                <img src="./app store.png" alt="">
+                <img src="./google play.png" alt="">
+            </div>
+        </div>
+       
+      </footer>
+      <hr>
+      <div class="p-3">
+          <p>
+              Copyrights ©2024 Eduport. Build by Webestica
+          </p>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+</body>
+</html>
