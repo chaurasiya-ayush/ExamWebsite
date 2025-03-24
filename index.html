@@ -9,7 +9,7 @@
 <style>
     @media screen and (orientation:landscape) {
         #article{
-            margin-top: 200px;
+            /* margin-top: 200px; */
             display: flex;
             justify-content: space-around;
         }
@@ -67,7 +67,15 @@
            
             background-color: rgb(195, 217, 238);
         }
-      
+      #demos{
+        display: none;
+      }
+      #bg{
+        display: none;
+      }
+      #allu{
+        display: none;
+      }
     }
    
 </style>
@@ -82,10 +90,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item btn ">
+              <li class="nav-item btn "  id="demos">
                 <button class="nav-link active btn  text-white" aria-current="page" style="background-color: rgb(96, 96, 232,0.8);">Category</button>
               </li>
-              <li class="nav-item ms-5 btn">
+              <li class="nav-item ms-5 btn" id="allu">
                 <a class="nav-link text-primary" href="#">Demos</a>
               </li>
               <li class="nav-item btn ">
@@ -100,15 +108,13 @@
               <li class="nav-item ms-2 me-2 btn">
                 <span  > ...</span>
               </li>
-              <li>
-                
-              </li>
+            
               
             </ul>
           
-            <input type="text" placeholder="Search" class="form-control ms-3 w-25 navbar-text">
-            <img src="Screenshot 2025-03-24 145951.png" alt="">
-            <span></span>
+            <input type="text" placeholder="Search" class="form-control ms-3 w-25 navbar-text" id="bg">
+            <img src="Screenshot 2025-03-24 145951.png" alt="" class="none">
+            
           </div>
         </div>
       </nav>
@@ -154,7 +160,7 @@
                     </div>
                 </div>
                 <div class="card p-4" style="background-color: rgb(115, 115, 174); display: flex; justify-content: space-around;">
-                    <div>
+                    <div >
                         <img src="./contact (1).png" alt="">
                     </div>
                     <div>
